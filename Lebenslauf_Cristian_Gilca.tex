@@ -1,0 +1,326 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Template: Curriculum Vitae
+%
+% Source: http://www.howtotex.com/
+% Feel free to distribute this template, but please keep the
+% referal to HowToTeX.com.
+% Date: July 2011
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% How to use writeLaTeX: 
+%
+% You edit the source code here on the left, and the preview on the
+% right shows you the result within a few seconds.
+%
+% Bookmark this page and share the URL with your co-authors. They can
+% edit at the same time!
+%
+% You can upload figures, bibliographies, custom classes and
+% styles using the files menu.
+%
+% If you're new to LaTeX, the wikibook is a great place to start:
+% http://en.wikibooks.org/wiki/LaTeX
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[paper=a4,fontsize=10.9pt]{scrartcl} % KOMA-article class
+\usepackage[a4paper, total={6.5in, 10in}]{geometry}
+							
+\usepackage{datetime}
+\ddmmyyyydate
+
+\usepackage[german]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[protrusion=true,expansion=true]{microtype}
+\usepackage{amsmath,amsfonts,amsthm}     % Math packages
+\usepackage{graphicx}                    % Enable pdflatex
+\usepackage[svgnames]{xcolor}            % Colors by their 'svgnames'
+\usepackage{geometry}
+	\textheight=700px                    % Saving trees ;-)
+\usepackage{url}
+\usepackage{wrapfig}
+
+
+\frenchspacing              % Better looking spacings after periods
+\pagestyle{empty}           % No pagenumbers/headers/footers
+
+
+
+
+%%%%%%%%%%%%%%ITEMIZE ON COLUMNS%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{etoolbox,refcount}
+\usepackage{multicol}
+
+\newcounter{countitems}
+\newcounter{nextitemizecount}
+\newcommand{\setupcountitems}{%
+  \stepcounter{nextitemizecount}%
+  \setcounter{countitems}{0}%
+  \preto\item{\stepcounter{countitems}}%
+}
+\makeatletter
+\newcommand{\computecountitems}{%
+  \edef\@currentlabel{\number\c@countitems}%
+  \label{countitems@\number\numexpr\value{nextitemizecount}-1\relax}%
+}
+\newcommand{\nextitemizecount}{%
+  \getrefnumber{countitems@\number\c@nextitemizecount}%
+}
+\newcommand{\previtemizecount}{%
+  \getrefnumber{countitems@\number\numexpr\value{nextitemizecount}-1\relax}%
+}
+\makeatother    
+\newenvironment{AutoMultiColItemize}{%
+\ifnumcomp{\nextitemizecount}{>}{3}{\begin{multicols}{2}}{}%
+\setupcountitems\begin{itemize}}%
+{\end{itemize}%
+\unskip\computecountitems\ifnumcomp{\previtemizecount}{>}{3}{\end{multicols}}{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%% Custom sectioning (sectsty package)
+%%% ------------------------------------------------------------
+\usepackage{xcolor}
+\usepackage{sectsty}
+
+\sectionfont{%			            % Change font of \section command
+	\color[HTML]{841617}
+	\usefont{T1}{phv}{b}{n}%		% bch-b-n: CharterBT-Bold font
+	\sectionrule{0pt}{0pt}{-5pt}{3pt}
+	}
+
+%%% Macros
+%%% ------------------------------------------------------------
+\newlength{\spacebox}
+\settowidth{\spacebox}{8888888888}			% Box to align text
+\newcommand{\sepspace}{\vspace*{0.5em}}		% Vertical space macro
+
+\newcommand{\MyName}[1]{ % Name
+		\Huge \usefont{T1}{phv}{b}{n} \hfill #1
+		\par \normalsize \normalfont}
+		
+\newcommand{\MySlogan}[1]{ % Slogan (optional)
+		\large \usefont{T1}{phv}{m}{n}\hfill \textit{#1}
+		\par \normalsize \normalfont}
+
+\newcommand{\NewPart}[1]{\section*{\uppercase{#1}}}
+
+\newcommand{\PersonalEntry}[2]{
+		\noindent\hangindent=0em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\mbox {\textit{#1}}}		       % Entry name (birth, address, etc.)
+		\hspace{5em} #2 \par}    % Entry value
+
+\newcommand{\SkillsEntry}[2]{      % Same as \PersonalEntry
+		\noindent\hangindent=0em\hangafter=0 % Indentation
+		\parbox{\spacebox}{        % Box to align text
+		\mbox{\textit{#1}}}			   % Entry name (birth, address, etc.)
+		\hspace{6em} #2 \par}    % Entry value	
+		
+\newcommand{\EducationEntry}[4]{
+		\noindent \textbf{#1} \hfill      % Study
+		\colorbox{White}{%
+			\parbox{16em}{%
+			\hfill\color{Black}#2}} \par  % Duration
+		\noindent \textit{#3} \par        % School
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+\newcommand{\WorkEntry}[4]{				  % Same as \EducationEntry
+		\noindent \textbf{#1} \hfill      % Jobname
+		\colorbox{Black}{\color{White}#2} \par  % Duration
+		\noindent \textit{#3} \par              % Company
+		\noindent\hangindent=2em\hangafter=0 \small #4 % Description
+		\normalsize \par}
+
+%%% Begin Document
+%%% ------------------------------------------------------------
+\begin{document}
+% you can upload a photo and include it here...
+%\begin{wrapfigure}{l}{0.5\textwidth}
+%	\vspace*{-2em}
+%		\includegraphics[width=0.20\textwidth]{poza4.jpg}
+%\end{wrapfigure}
+
+\color[HTML]{6a040f}
+\MyName{Cristian Gîlc\u{a}}
+\color{black}
+\MySlogan{Lebenslauf}
+\sepspace
+\MySlogan{\today}
+
+\sepspace
+
+%%% Personal details
+%%% ------------------------------------------------------------
+\color[HTML]{6a040f}
+\NewPart{Persönliche Details}{}
+\color[HTML]{000000}
+
+\PersonalEntry{Geburtsdatum}{18. Juli 1994 in Craiova (Rumänien)}
+\PersonalEntry{Adresse}{Str. Cerna nr. 15A, bl. a5, sc. 2, ap. 1, Craiova, România}
+\PersonalEntry{Tel.}{+40 727 292 100 (rumänische Nummer)}
+\PersonalEntry{E-Mail}{\urlstyle{same}\url{gilca.cristian@gmail.com}}
+\PersonalEntry{LinkedIn}{\urlstyle{same}\url{linkedin.com/in/gilca}}
+
+% \NewPart{Persönliche Erklärung}{}
+% Ich bin Bachelor-Student, mit einiger Erfahrung an studentischer Tätigkeit. Ich bin teamfähig und
+% arbeite gern. Ich verfüge über gute IT-Kenntnisse, eine analytische Denkweise und bin in der Lage
+% unter Druck und Stress konzentriert zu arbeiten. Ich bin jederzeit bereit mich neuen
+% Herausforderungen zu stellen und die geforderten Ansprüche und Aufgaben zu erfüllen. Ich bin
+% vielseitig einsetzbar und zeitlich flexibel.
+
+
+
+%%% Education
+%%% ------------------------------------------------------------
+\NewPart{Ausbildung}{}
+\EducationEntry{\color[HTML]{6a040f}Informatik (Bachelor of Science)}{2016-2021}{Technische Universität Ilmenau, Deutschland}{
+\begin{itemize}
+	\item{Bachelorarbeit: Analyse von IT-Sicherheitszielen mit Methodiken der Funktsionssicherheit am Beispiel eines Smart Meter Systems}
+	\item{Spezialisierung Mathematik: Numerik, Optimierung, Informationscodierung, Diskrete Mathematik}
+	\item{Schwerpunkt IT-Sicherheit: Systemsicherheit, Network Security, SELinux, Kryptographie, Advanced Operating Systems}
+
+
+	\item{Softwareprojekt: Visualisierung von mehrschichtigem Netzwerk}
+	\begin{itemize}
+		\item{Projektvorgehesmodell mit Unified Process Modell, Versionierung mit Apache Subversion, Programmierung mit typescript, javascript, HTML und CSS, Dokumentation mit Latex und TypeDoc, UnitTests mit Mocha und Chai, Softwaremodellierung mit Visual Paradigm und Zeiterfassung mit Kimai}
+	\end{itemize}
+	\item{Projektseminar betriebswirtschaftliche Anwendungssysteme (PROBAS): ABAP von SAP}
+\end{itemize}}
+
+% \sepspace
+
+%\EducationEntry{\color[HTML]{6a040f}Sound Technology (Bachelor of Science)}{2013-2016}{University of South Wales, Cardiff, Wales}{\begin{itemize}\item{Music Computer Science, Music Production}\end{itemize}}
+% \sepspace
+\EducationEntry{\color[HTML]{6a040f}Abitur}{2009-2013}{“Elena Cuza” National Kolegium, Craiova, Rumänien}{
+\begin{itemize}
+	\item{Mathematik und Informatik mit Schwerpunkt Informatik}
+	\item{Cambridge Advanced English Diplom und Abitur Diploma}
+\end{itemize}}
+
+
+\NewPart{Arbeitserfahrung}{}
+
+\EducationEntry{\color[HTML]{6a040f}Python Developer}{Oktober 2022 - jetzt}{Freelance, Vollzeit}{
+\begin{itemize}
+	\item{Automation Bots, Pipelining und Web Development}
+\end{itemize}}
+
+\EducationEntry{\color[HTML]{6a040f}Software Developer}{Juli 2021 - Oktober 2022}{HELLA GmbH \& Co. KGaA (Craiova), Vollzeit}{
+\begin{itemize}
+		\item{Configuration Manager:} 
+		\begin{itemize}
+			\item{Verantwortlicher für Projektprozess, File Management mit PTC Integrity, IBM EWM und GitHub als Werkzeuge und Team Meetings Leiter}
+		\end{itemize}
+		\item{Problem and Change Manager}
+		\begin{itemize}
+			\item{Projekt Fehler, Verantworlicher für Änderungen und neue Implementierungen, Verantwortlicher und Maintainer für Change Requests mit PTC Integrity und IBM EWM Werkzeuge}
+		\end{itemize}
+		\item{Release Manager}
+		\begin{itemize}
+			\item{Verantwortlicher für Prozess und Dokumentation für interne oder Kundenprojekt Releases}
+		\end{itemize}
+\end{itemize}}
+\sepspace
+
+\EducationEntry{\color[HTML]{6a040f}Aushilfskraft}{Juni 2019 - Juni 2020}{Micro-Hybrid Electronic GmbH (Ilmenau), Mini-job}{
+	\begin{itemize}
+		\item{Programmierung einer Anwendung für Drucksiebe-Management mit Python}
+		\begin{itemize}
+			\item{tkinter als Hauptpythonmodul, Datenübertragung über JSON, Unittests, Erstellung von Benutzerhandbuch, Pflichtenheft und Entwurfsdokument in \LaTeX:}
+
+		\end{itemize}
+		\item{elektrische Messungen und mechanische Messungen, Ausführung der automatischen Inspektionssysteme (AOI) und Bedienung der Stapelmaschine und KEKO-Siebdruckers}
+	\end{itemize}}
+\sepspace
+	
+\EducationEntry{\color[HTML]{6a040f}Web Developer}{Februar - Mai 2017}{EasternGraphics GmbH (Ilmenau), Teilzeit}{
+	\begin{itemize}
+		\item{Web Application Programmierung mit TypeSript, React und SASS in Microsoft Visual Studio Code, Versionierung mit Git, JavaScript Tasking mit Grunt und Runtime Environment mit Node.js}
+\end{itemize}}
+% \sepspace
+
+
+
+% \EducationEntry{Campus Scout}{Oktober 2016 - Februar 2017}{Campus Scout Netzwerk GmbH (Ilmenau), Minijob}
+% % {Flyers, Zeitschriften und Magazine an die Universität verteilen, Posters aufhängen}
+% \sepspace
+
+
+% \EducationEntry{Sandwichartist}{Juni – August 2016}{Subway IP LLC (Erfurt), Part-Time}
+% % {Fastfood zubereiten und verkaufen}
+% \sepspace
+
+
+% \EducationEntry{Servicekraft}{Februar 2016}{GFE German Food Entertainment GmbH (Erfurt), Minijob}
+% %{in der Küche Geschirre waschen}
+% \sepspace
+
+
+% \EducationEntry{Servicekraft}{November 2015 – Januar 2016}{bei der Erfurter Alm (Erfurt), Part-time}
+% % {in der Küche Geschirre waschen, Kochaushilfe}
+% \sepspace
+
+
+% \EducationEntry{Maler}{Oktober 2015}{Europäische Jugendbildungs- und Jugendbegegnungsstätte EJBW (Weimar), Part-time}
+% % {Wände abkratzen und streichen, sauber machen}
+% \sepspace
+
+
+% \EducationEntry{Servicekraft}{Mai 2015 – Juli 2015}{Köstritzer Spiegelzelt 2015 (Weimar), Part-time}
+% % {in der Küche Geschirre waschen, Kochaushilfe}
+% \sepspace
+
+\EducationEntry{\color[HTML]{6a040f}Receptionist}{März 2014 – Februar 2015}{Hilton Hotels \& Resorts (Cardiff, Wales), Vollzeit}{
+ \begin{itemize}
+	\item{Management von Hotelgast-Datenbank auf PC und tägliches Audit}
+\end{itemize}}
+
+\NewPart{Volontariat}{}
+
+\EducationEntry{\color[HTML]{6a040f}Netzwerkadministrator}{April 2016 - Mai 2021}{Forschungsgemeinschaft elektronische Medien e.V. (Ilmenau, Germany)}{
+\begin{itemize}
+	\item{Verwaltung der Mitgliederdatenbank, Lösung von technischer Probleme und technische Beratung}
+	% \item{Solving of technical problems and giving technical advice}
+	% \item{techische Beratung von Kunden}
+\end{itemize}}
+
+
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{KOMPETENZEN}{}
+
+\SkillsEntry{Sprachen:}{Rumänisch (native)}
+\SkillsEntry{}{Deutsch (nahezu Muttersprache C2)}
+\SkillsEntry{}{English (fortgeschritten C1)}
+\SkillsEntry{}{Japanish (Anfänger A2)}
+
+\sepspace
+
+\SkillsEntry{Programmiersprachen:}{Java, Python, C++, Erlang, Prolog, }
+\SkillsEntry{}{JavaScript, TypeScript, Lambda Calculus,}
+\SkillsEntry{}{SASS, XML, React, CSS, HTML, PHP}
+
+\sepspace
+
+\SkillsEntry{technische Kenntnisse:}{Windows, Linux, MacOS, Bash, PowerShell, CMD} 
+\SkillsEntry{}{VMware Workstation, Windows Subsystem Linux, Docker}
+\SkillsEntry{}{Visual Studio, Eclipse, CLion, PyCharm, Anaconda, IntelliJ IDEA}
+
+\SkillsEntry{}{Oktave, Matlab, Visual Diagram, \LaTeX, Adobe Photoshop}
+\SkillsEntry{}{MS Office: Word, Access, Excel, Powerpoint}
+\SkillsEntry{}{Git, SVN, FL Studio, Sony Vegas Pro, Sublime Text}
+\SkillsEntry{}{Slack, Zulip, Kimai, Toggl, Evernote, Trello, XMind}
+\SkillsEntry{}{Scrum, Unified Process}
+
+
+
+\NewPart{Führerschein}{}
+Kategorie A und B
+
+%%% References
+%%% ------------------------------------------------------------
+\NewPart{Zeugnisse}{}
+Auf Anfrage erhältlich
+\end{document}

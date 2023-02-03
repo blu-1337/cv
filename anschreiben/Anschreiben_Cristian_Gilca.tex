@@ -1,0 +1,276 @@
+% Copyright 2009-2011,2015-2019 Dominik Wagenfuehr <dominik.wagenfuehr@deesaster.org>
+% Dieses Dokument unterliegt der Creative-Commons-Lizenz
+% "Namensnennung-Weitergabe unter gleichen Bedingungen 4.0 International"
+% [http://creativecommons.org/licenses/by-sa/4.0/deed.de].
+%
+% Beispiel-Bewerberfoto: Copyright 2013 TVJunkie
+% https://commons.wikimedia.org/wiki/File:Gnome-Wikipedia-user-female.png
+% Lizenz: Creative-Commons-Lizenz "Attribution-Share Alike 3.0 Unported"
+% [https://creativecommons.org/licenses/by-sa/3.0/deed.en]
+
+\documentclass[fontsize=12pt,parskip=half-]{scrartcl}
+
+% Liest die vordefinierten Befehle ein. Nicht veraendern!
+\usepackage{bewerbung-latex}
+
+% Optionales Paket, falls jemand \Telefon und \Email
+% als Symbol nutzen will.
+%\usepackage{marvosym}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ab hier sollte man selbst Aenderungen vornehmen.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Andere Schrift festlegen (nur machen, falls man die korrekten Namen kennt).
+% Das erste Argument ist der Paketname für pdfTeX, das zweite Argument
+% der Schriftname für XeTeX und LuaTeX.
+% Als Standard wird hier TeX Gyre Pagella benutzt (Paket "tex-gyre").
+\SetzeSchrift{tgpagella}{TeX Gyre Pagella}     % optional
+
+% Umschalten auf serifenlose Schrift. Wenn gewuenscht, einkommentieren.
+% Achtung: Nicht jede serifenlose Schrift kommt mit den Kapitaelchen in
+% den Ueberschriften (Lebenslauf, Zu meiner Person etc.) klar. Sollten
+% diese mit Serifen angezeigt werden, dann muss man zusaetzlich das
+% optionale Argument [noscshape] angeben. Dann gibt es natuerlich auch
+% keine Kapitaelchen!
+%\NutzeSerifenlosenSchrift[]{}%
+
+% Zuerst die Sprache festlegen.
+% Per Standard ist "Deutsch" gesetzt.
+% Zusaetzliche, moegliche Angaben sind: "Schweiz", "British", "American"
+\SetzeSprache{Deutsch}          % optional
+
+% Eigene Daten festgelegt.
+\VollerName{Cristian Gîlcă}
+\AbsenderStrasse{Str. Cerna Nr. 15A, Bl. a5. Sc. 2, Ap. 1}
+\AbsenderPLZOrt{200185 Craiova}
+\AbsenderLand{Rumänien}
+% Als erstes Argument kann man beim Telefon eine Angabe
+% davor angeben. Der Wert darf auch leer sein.
+% Bei Telefonnummer ggf. Laenderkennung ergaenzen, wenn
+% die Telefonnummer nicht im Land des Empfaengers ist.
+\bwTelefon{}{+40 727 292 100}
+%\bwTelefon{\Telefon}{+49 170 567890}
+% Als erstes Argument kann man bei der E-Mail eine Angabe
+% davor angeben (z.B. "E-Mail:". Der Wert darf auch leer sein.
+% Zusaetzlich kann optional eine Farbe angegeben werden,
+% mit der die Mailadresse dargestellt werden soll.
+% Standard ist "black"  als Farbe. Beispiel: \EMail[orange]{...}{...}
+% Achtung: Die Farbe wird fuer alle Links benutzt, damit es einheitlich aussieht.
+\bwEMail[Blue]{}{gilca.cristian@gmail.com}
+%\bwEMail{\Email}{eva.mustermann@musterstadt.de}
+\Ort{Craiova}
+\Datum{\HeutigerTag}
+\Geburtstag{January 1, 1985}
+\Geburtsort{Berlin}
+% Der Ausbildungsgrad und die Details sind optional.
+% Leer lassen oder auskommentieren, wenn nichts angezeigt werden soll.
+\Details{single, travel flexible} % verheiratet, 2 Kinder, etc.
+\Ausbildungsgrad{Doctor of Veterinary Medicine}    % optional
+% Optionales Xing- und Linkedin-Profil
+% Beides wird nur auf der Persoenlichen Seite angezeigt,
+% nicht im Anschreiben.
+\XingProfil{Eva\_Mustermann}
+\LinkedInProfil{evamustermann}
+
+% Die Unterschrift sollte als Bilddatei vorliegen.
+% Leer lassen oder auskommentieren, wenn keine Signatur eingebunden
+% werden soll.
+% Als Option kann man die Breite der Unterschrift angeben.
+% Eine Breite von 5cm ist der Standard.
+\UnterschriftenDatei[3.9cm]{signatur-bewerber.png}           % optional
+
+% Das Bewerberfoto.
+% Leer lassen oder auskommentieren, wenn keine Foto auf
+% der "Meine Seite"-Seite angezeigt werden soll.
+% Als Option gibt man die Hoehe des Bildes an. Eine Hoehe von 10.5 cm
+% ist das groesste, was noch auf die Seite passt.
+\BewerberFoto[6cm]{foto-bewerber.jpg}                 % optional
+
+% Adressat festlegen
+% Die Abteilung und der Vorname sind optional und koennen leer
+% gelassen oder auskommentiert werden.
+% Wenn der Nachname leergelassen oder auskommentiert wird,
+% wird die Anrede automatisch durch "Damen und Herren" ersetzt.
+\Firma{Capgemini Engineering}
+\Abteilung{Altran Deutschland S.A.S. \& Co. KG}            % optional
+%\AdressatVorname{Katrin }              % optional
+%\AdressatNachname{Kraus}                % ggf. optional
+%\AnschriftStrasse{Niederlassung Karlsruhe}
+%\AnschriftPLZOrt{Lorenzstr. 29 \newline
+%	76135 Karlsruhe
+%}
+
+% Als optionales Argument hat der Titel eine Kurzform, die nur im Briefkopf
+% benutzt wird. Wenn das optionale Argument fehlt, wird die normale Angabe 
+% fuer Briefkopf und Anrede benutzt.
+% Achtung: Im Englischen ersetzt ein Titel die Anredeform.
+% Daneben werden im Britischen keine Punkte gesetzt (muss man selbst dran denken!)
+%\AdressatTitel[Dr.]{Doktor}   % optional
+
+% Achtung: Anrede muss am Ende dieser Liste stehen,
+% damit dies korrekt um Titel und Name ergaenzt wird!
+% Deutsch/Schweiz: Frau, Herr oder leer lassen
+% British/American: Mr, Mrs, Ms oder leer lassen
+% Achtung: Im Amerikanischen wird automatisch ein Punkt ergaenzt.
+% Achtung: Im Englischen ersetzt ein Titel die Anredeform.
+\Anrede{Frau}
+
+% Man kann hier einen zweiten Ansprechpartner beim Anschreiben angeben.
+% Die Adresszeile wird entsprechend ergaenzt.
+%\ZweiterAdressatVorname{Pitti}            % optional
+%\ZweiterAdressatNachname{Platsch}         % ggf. optional
+%\ZweiterAdressatTitel[Dr]{Doctor}         % optional
+%\ZweiterAdressatAnrede{Mr}
+
+% Die Stelle, auf die man sich bewirbt
+\Bewerberstelle{Junior Cloud \& DevOps Engineer Automotive (m/w/d)}
+
+% Beginn des Dokuments, nicht aendern!
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Das Anschreiben
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Anschreiben und Motivationsseite sind per Standard als linksbuendiger
+% Flattersatz gesetzt. Mit der nachfolgenden Option kann man auf
+% Blocksatz umstellen.
+%\NutzeBlocksatz{}
+
+% Ausrichtung des Absenders im Anschreiben (nur im Anschreiben, nicht
+% auf der eigenen Seite!)
+% Aufgrund der Ausrichtung des Adressaten will man ggf. auch den Absender
+% neu ausrichten, damit es nicht direkt übereinander steht. Per Standard:
+% Deutsch: rechts
+% Schweiz: links
+% Aber man kann es manuell umschalten, wenn man will.
+%\AbsenderAusrichtung{rechts}          % optional
+
+% Ausrichtung des Adressaten im Adressfeld
+% Es gibt Laender, wo das Adressfeld nicht links,
+% sondern rechts steht. Per Standard gilt:
+% Deutsch: links
+% Schweiz: rechts
+% Aber man kann es manuell umschalten, wenn man will.
+%\AddressatAusrichtung{links}         % optional
+
+% Abstand zwischen dem Absender und dem Adressat im Anschreiben.
+% Gemessen wird in Zeilen, d.h. der Wert 1.5 steht fuer anderthalb Zeilen.
+% Der Standard-Wert ist 0.
+%\AbstandZwischenAdressen{0}      % optional
+
+% Abstand vor dem eigentlichen Anschreiben (inkl. Ort und Datum).
+% Gemessen wird in Zeilen, d.h. der Wert 1.5 steht fuer anderthalb Zeilen.
+% Der Standard-Wert ist 1.
+\AbstandVorAnschreiben{0}      % optional
+
+% Abstand zwischen dem Ort und Datum und der Betreffzeile.
+% Gemessen wird in Zeilen, d.h. der Wert 1.5 steht fuer anderthalb Zeilen.
+% Der Standard-Wert ist 1.
+\AbstandZwischenDatumUndBetreff{1}     % optional
+
+% Anschreibenseite vergroessern, d.h. es ist damit moeglich, ueber den
+% eigentlichen unteren Rand zu schreiben, falls das Anschreiben etwas
+% laenger geworden ist.
+% Gemessen wird in Zeilen, d.h. der Wert 1.5 steht fuer anderthalb Zeilen.
+% Der Standard-Wert ist 0. Als Maximalwert sollte man 3 einstellen, ansonsten
+% wirkt das Anschreiben vom Aufbau sehr unausgeglichen.
+\AnschreibenSeiteVergroessern{0}     % optional
+
+% Abstand zwischen Unterschrift und den Anlagen im Anschreiben
+% Gemessen wird in Zeilen, d.h. der Wert 1.5 steht fuer anderthalb Zeilen.
+% Der Standard-Wert ist 1.
+\AbstandVorAnlagen{2}     % optional
+
+% Hinweis auf Anlagen
+% Wenn nicht benoetigt, dann einfach auskommentieren.
+%\AnschreibenAnlage{Anlagen}
+
+\begin{Anschreiben}
+    % Hinweis Anfang – nach dem Lesen loeschen!
+    % In der Schweiz beginnt man den Satz im Uebrigen gross, da kein
+    % Komma bei der Anrede benutzt wird. Im Englischen faengt man auch gross an.
+
+
+
+
+ich bin auf Ihr aktuelles Jobangebot auf Ihre Webseite capgemini.com aufmerksam geworden. Deswegen möchte ich mich gerne hiermit für die Junior Position im Bereich DevOps bei Ihnen bewerben. 
+
+Ich habe 2021 mein Studium der Informatik an der TU Ilmenau in Deutschland abgeschlossen. Danach habe ich ein Jahr lang als Configuration Manager bei Hella KGaA Hueck \& Co. in Rumänien gearbeitet. Dies hat mein Interesse an der DevOps-Seite des Betriebs geweckt, da ich meine Programmierkenntnisse nutzen möchte, um IT-Systeme besser zum Laufen zu bringen. 
+
+Gern möchte ich mich weiterentwickeln und praxisnahe Programmiererfahrung bei Ihrer Firma sammeln. Durch eine vorherige Tätigkeit als Configuration Manager, Aushilfskraft und Webentwickler verfüge ich auch über sehr gute Programmierkenntnisse. 
+
+Weitere Informationen zu meinem bisherigen Werdegang entnehmen Sie bitte dem angefügten Lebenslauf. 
+    % Hinweis Ende – nach dem Lesen loeschen!
+\end{Anschreiben}
+
+% Optional kann man die Farbe für die Ueberschriften ab hier festlegen.
+% Dazu zaehlt auch die eigene Seite.
+% Als Optionen kann man die normalen LaTeX-Farben verwenden (Englisch):
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Per Standard wird "Black" (Schwarz) verwendet.
+% Achtung: Man sollte es nicht zu bunt treiben!
+%\UeberschriftFarbe{Black}            % optional
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Lebenslauf
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Ausrichtung der Ueberschriften.
+% Man kann die Ausrichtung prinzipiell vor jedem Kapitel
+% (Lebenslauf, Motivation, Anlagen) neu einstellen, aber gleichförmiger
+% ist es, wenn man es nur einmal hier definiert.
+% Moegliche Angaben sind: links, rechts, mittig.
+% Per Standard wird "rechts" ausgewaehlt.
+\UeberschriftAusrichtung{rechts}         % optional
+
+% Schriftgroesse der Ueberschriften
+% Erlaubt sind alle Standard-Schriftgroessenangaben.
+% Sinnvoll sind \LARGE, \huge, \Huge
+% Standard ist \LARGE
+\UeberschriftGroesse{\LARGE}            % optional
+
+% Bezeichnung des Lebenslaufes.
+% Per Standard gilt:
+% Deutsch/Scheiz: "Lebenslauf"
+% American: "Resumé"
+% British: "Curriculum Vitae"
+%\UeberschriftLebenslauf{Lebenslauf}     % optional
+
+% Der Lebenslauf ist in Abschnitte unterteilt. Jeder Abschnitt hat dabei
+% einen Titel. Innerhalb des Abschnitts (zwischen "begin" und "end")
+% legt man mit \EintragCV einen Eintrag an.
+% In der Textgestaltung ist man dabei ansonsten frei.
+% Legt den Einschub des Inhalts eines CV-Abschnitte (d.h. der Tabelle) fest.
+% Standard ist 8pt.
+% Das optionale Argument "buendig" gibt an, dass die Ueberschrift zusaetzlich
+% noch buendig zur Tabelle sein soll und nicht linksbuendig per Standard.
+\EinschubCV[buendig]{8pt}            % optional
+%\EinschubCV{8pt}
+
+% Optional kann man die Farbe fuer die einzelnen Abschnitte
+% und/oder fuer die Linien darunter festlegen.
+% Als Optionen kann man die normalen LaTeX-Farben verwenden (Englisch):
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+% Per Standard wird "Black" (Schwarz) verwendet.
+% Achtung: Man sollte es nicht zu bunt treiben!
+\AbschnittFarbe{Blue}                  % optional
+\AbschnittLinienFarbe{Blue}            % optional
+
+% Ausrichtung der Unterschrift im Lebenslauf.
+% Moegliche Angaben sind: links oder rechts (mittig finde ich zu aussergewoehnlich)
+% Per Standard wird "links" ausgewaehlt.
+\LebenslaufUnterschriftAusrichtung{links}         % optional
+
+
+% Man kann die Anlagen auch direkt in das Dokument einbinden,
+% wenn sie als PDF vorliegen. Oder man versendet sie separat.
+% Mit der Option "quer" wird die Anlage im Querformat eingebunden.
+%\AnlageEinfuegen{diplomurkunde.pdf}
+%\AnlageEinfuegen[quer]{doktorurkunde.pdf}
+
+% Ende des Dokuments, nicht aendern!
+\end{document}
