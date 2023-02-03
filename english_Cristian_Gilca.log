@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.10.9)  3 FEB 2023 15:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.10.9)  3 FEB 2023 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,13 +721,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\blu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
+Overfull \hbox (19.48459pt too wide) in paragraph at lines 165--165
+[][] 
+ []
+
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              You've used the KOMA-Script implementation of \@ssect
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 180.
+ne 184.
 
 (C:\Users\blu\AppData\Local\Programs\MiKTeX\tex/latex/ucs\uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
@@ -738,7 +742,7 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 262.
+ne 263.
 
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
@@ -746,71 +750,46 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 291.
+ne 300.
+
+
+Overfull \hbox (61.84465pt too wide) in paragraph at lines 307--307
+[][] 
+ []
+
+
+Overfull \hbox (43.50345pt too wide) in paragraph at lines 312--312
+[][] 
+ []
 
 [1
 
 {C:/Users/blu/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 303.
-
-
-Overfull \hbox (61.84465pt too wide) in paragraph at lines 312--312
-[][] 
- []
-
-
-Overfull \hbox (43.50345pt too wide) in paragraph at lines 318--318
-[][] 
- []
-
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 330.
-
-
-Class scrartcl Warning: Incompatible usage of \@ssect detected.
-(scrartcl)              You've used the KOMA-Script implementation of \@ssect
-(scrartcl)              from within a non compatible caller, that does not
-(scrartcl)              \scr@s@ct@@nn@m@ locally.
-(scrartcl)              This could result in several error messages on input li
-ne 335.
-
-[2] (english_Cristian_Gilca.aux)
+(english_Cristian_Gilca.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.23924pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 12279 strings out of 478582
- 224156 string characters out of 2845288
- 718836 words of memory out of 3000000
- 30227 multiletter control sequences out of 15000+600000
- 490915 words of font info for 88 fonts, out of 8000000 for 9000
+ 12262 strings out of 478582
+ 223910 string characters out of 2845288
+ 720836 words of memory out of 3000000
+ 30219 multiletter control sequences out of 15000+600000
+ 490068 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,5n,106p,10670b,489s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\blu\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm10
-00.pk>{C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<
-C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx1
-0.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmr10.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmr8.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public
-/amsfonts/cm/cmti10.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1
-/urw/helvetic/uhvb8a.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type
-1/urw/helvetic/uhvro8a.pfb>
-Output written on english_Cristian_Gilca.pdf (2 pages, 94427 bytes).
+{C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/U
+sers/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pf
+b><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+r10.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr8.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+fonts/cm/cmti10.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/urw
+/helvetic/uhvb8a.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/ur
+w/helvetic/uhvro8a.pfb>
+Output written on english_Cristian_Gilca.pdf (1 page, 91917 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 29697 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 25601 words of extra memory for PDF output out of 29859 (max. 10000000)
 
