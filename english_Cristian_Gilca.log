@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.10.9)  3 FEB 2023 15:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.10.9)  3 FEB 2023 16:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -41,6 +41,10 @@ Package: tocbasic 2022/05/01 v3.36 KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: babel extension for `toc' omitted
 (tocbasic)             because of missing \bbl@set@language on input line 135.
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.47> not available
+(Font)              size <10> substituted on input line 2255.
+
 (C:\Users\blu\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\typearea.sty
 Package: typearea 2022/05/01 v3.36 KOMA-Script package (type area)
 \ta@bcor=\skip48
@@ -51,27 +55,27 @@ Package: typearea 2022/05/01 v3.36 KOMA-Script package (type area)
 \footheight=\skip52
 
 
-Package typearea Warning: DIV for 10.9pt and used papersize
+Package typearea Warning: DIV for 10.47pt and used papersize
 (typearea)                not defined!
 (typearea)                Using DIV=calc.
 
 DIV calculation for typearea with good linewidth.
 Package typearea Info: These are the values describing the layout:
-(typearea)             DIV  = 8
+(typearea)             DIV  = 7
 (typearea)             BCOR = 0.0pt
 (typearea)             \paperwidth      = 597.50793pt
-(typearea)              \textwidth      = 373.44246pt
+(typearea)              \textwidth      = 341.4331pt
 (typearea)              DIV departure   = 0%
-(typearea)              \evensidemargin = 39.76274pt
-(typearea)              \oddsidemargin  = 39.76274pt
+(typearea)              \evensidemargin = 55.76743pt
+(typearea)              \oddsidemargin  = 55.76743pt
 (typearea)             \paperheight     = 845.04694pt
-(typearea)              \textheight     = 534.09824pt
-(typearea)              \topmargin      = -2.60901pt
-(typearea)              \headheight     = 16.34995pt
-(typearea)              \headsep        = 19.61993pt
-(typearea)              \topskip        = 10.9pt
-(typearea)              \footskip       = 45.77985pt
-(typearea)              \baselineskip   = 13.07996pt
+(typearea)              \textheight     = 487.90067pt
+(typearea)              \topmargin      = 13.90009pt
+(typearea)              \headheight     = 15.70496pt
+(typearea)              \headsep        = 18.84595pt
+(typearea)              \topskip        = 10.47pt
+(typearea)              \footskip       = 43.97388pt
+(typearea)              \baselineskip   = 12.56396pt
 (typearea)              on input line 1744.
 )
 \c@part=\count186
@@ -574,15 +578,15 @@ Package scrbase Info: activating english \indexname on input line 138.
 * \textheight=702.62756pt
 * \oddsidemargin=-8.39355pt
 * \evensidemargin=-8.39355pt
-* \topmargin=-59.30115pt
-* \headheight=16.34995pt
-* \headsep=19.61993pt
-* \topskip=10.9pt
-* \footskip=45.77985pt
-* \marginparwidth=74.68849pt
+* \topmargin=-57.88217pt
+* \headheight=15.70496pt
+* \headsep=18.84595pt
+* \topskip=10.47pt
+* \footskip=43.97388pt
+* \marginparwidth=85.35828pt
 * \marginparsep=12.8401pt
 * \columnsep=10.0pt
-* \skip\footins=9.80997pt plus 4.35951pt minus 2.18045pt
+* \skip\footins=9.42297pt plus 4.18753pt minus 2.09444pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -639,7 +643,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <27.11925> not available
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <26.04942> not available
 (Font)              size <24.88> substituted on input line 146.
 
 LaTeX Font Info:    Trying to load font information for T1+phv on input line 14
@@ -656,10 +660,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.07996> not available
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <12.56396> not available
 (Font)              size <12> substituted on input line 148.
 
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <13.07996> not available
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12.56396> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 148.
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
@@ -670,11 +674,11 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 ne 157.
 
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15.69601> not available
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <15.07681> not available
 (Font)              size <14.4> substituted on input line 157.
 
 
-LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <15.69601> not available
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <15.07681> not available
 (Font)              size <14.4> substituted on input line 157.
 
 Package microtype Info: Loading generic protrusion settings for font family
@@ -682,27 +686,27 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <15.69601> not available
+LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <15.07681> not available
 
 (Font)              size <14.4> substituted on input line 157.
 
 
-Overfull \hbox (7.04936pt too wide) in paragraph at lines 160--160
+LaTeX Font Warning: Font shape `OT1/cmr/m/it' in size <10.47> not available
+(Font)              size <10> substituted on input line 160.
+
+
+Overfull \hbox (6.43767pt too wide) in paragraph at lines 160--160
 [][] 
  []
 
-LaTeX Font Info:    Calculating math sizes for size <10.9> on input line 160.
+LaTeX Font Info:    Calculating math sizes for size <10.47> on input line 160.
 
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.45> not available
-(Font)              size <5> substituted on input line 160.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <5.45> not available
-(Font)              size <5> substituted on input line 160.
+LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.47> not available
+(Font)              size <10> substituted on input line 160.
 
 
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <5.45> not available
-(Font)              size <5> substituted on input line 160.
+LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.47> not available
+(Font)              size <10> substituted on input line 160.
 
 LaTeX Font Info:    Trying to load font information for U+msa on input line 160
 .
@@ -721,7 +725,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 (C:\Users\blu\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Overfull \hbox (19.48459pt too wide) in paragraph at lines 165--165
+Overfull \hbox (17.79405pt too wide) in paragraph at lines 165--165
 [][] 
  []
 
@@ -733,6 +737,14 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              This could result in several error messages on input li
 ne 184.
 
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.47> not available
+(Font)              size <10> substituted on input line 189.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <9.55394> not available
+(Font)              size <10> substituted on input line 189.
+
 (C:\Users\blu\AppData\Local\Programs\MiKTeX\tex/latex/ucs\uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
@@ -742,7 +754,7 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 263.
+ne 265.
 
 
 Class scrartcl Warning: Incompatible usage of \@ssect detected.
@@ -750,15 +762,15 @@ Class scrartcl Warning: Incompatible usage of \@ssect detected.
 (scrartcl)              from within a non compatible caller, that does not
 (scrartcl)              \scr@s@ct@@nn@m@ locally.
 (scrartcl)              This could result in several error messages on input li
-ne 300.
+ne 302.
 
 
-Overfull \hbox (61.84465pt too wide) in paragraph at lines 307--307
+Overfull \hbox (56.47905pt too wide) in paragraph at lines 309--309
 [][] 
  []
 
 
-Overfull \hbox (43.50345pt too wide) in paragraph at lines 312--312
+Overfull \hbox (39.72913pt too wide) in paragraph at lines 314--314
 [][] 
  []
 
@@ -768,26 +780,26 @@ Overfull \hbox (43.50345pt too wide) in paragraph at lines 312--312
 (english_Cristian_Gilca.aux)
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 2.23924pt have occurred.
+(Font)              up to 1.16942pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 12262 strings out of 478582
- 223910 string characters out of 2845288
- 720836 words of memory out of 3000000
- 30219 multiletter control sequences out of 15000+600000
- 490068 words of font info for 82 fonts, out of 8000000 for 9000
+ 12246 strings out of 478582
+ 223785 string characters out of 2845288
+ 720864 words of memory out of 3000000
+ 30213 multiletter control sequences out of 15000+600000
+ 488397 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,5n,106p,10670b,489s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/U
 sers/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pf
 b><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 r10.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts
-/cm/cmr8.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
+/cm/cmr7.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmti10.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/urw
 /helvetic/uhvb8a.pfb><C:/Users/blu/AppData/Local/Programs/MiKTeX/fonts/type1/ur
 w/helvetic/uhvro8a.pfb>
-Output written on english_Cristian_Gilca.pdf (1 page, 91917 bytes).
+Output written on english_Cristian_Gilca.pdf (1 page, 92050 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
